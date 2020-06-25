@@ -1,0 +1,109 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 150px 25px 25px 250px  25px 150px;
+    justify-content: center;
+    background-color: gray;
+    grid-template-areas: 
+    "header header header header"
+    "subheader subheader subheader subheader"
+    "round round round round"
+    "space_left dice_left dice_right space_right"
+    "under_space_left roll_button roll_button under_space_right"
+    "footer footer footer footer";
+}
+h1{
+    font-size: 68px;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+.header{
+    grid-area: header;
+    justify-self: right;
+    align-self: right;
+}
+.subheader{
+    grid-area: subheader;
+    justify-self: center;
+    align-self: start;
+}
+.round{
+    grid-area: round;
+    justify-self: center;
+    align-self: start;
+}
+.footer{
+    grid-area: footer;
+    justify-self: center;
+    align-self: center;
+}
+.space_left{
+    grid-area: space_left;
+    justify-self: center;
+    align-self: start;
+    border: 1px;
+    border-color: red ;
+}
+
+.space_right{
+    grid-area: space_right;
+    justify-self: center;
+    align-self: start;
+    
+}
+.dice_left{
+    grid-area: dice_left;
+    justify-self: center;
+    align-self: center;
+    
+}
+.dice_right{
+    grid-area: dice_right;
+    justify-self: center;
+    align-self: center;
+}
+.under_space_left{
+    grid-area: under_space_left;
+    align-self: start;
+}
+.under_space_right{
+    grid-area: under_space_right;
+}
+.dice_img {
+   width: 125px;
+   height: 125px;
+}
+#header_img{
+    width: 400px;
+    height: 150px;
+    /* opacity: 0; */
+    
+}
+
+.roll_button{
+    grid-area: roll_button;
+    justify-self: center;
+    align-self: start;
+}
+
+.active{
+    background-image: url(/images/active_background_1.png);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.nonactive{
+    background-image: url(/images/nonactive_background_1.png);
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
+.title{
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.1em;
+    color: red;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}

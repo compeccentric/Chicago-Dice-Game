@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Dice Roll</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
+</head>
+<body>
+    <class class="wrapper">
+        
+            <div class="header">
+                <img id="header_img" src="/images/header_4.png">
+            </div>
+            <div class="subheader">
+               <button id="start_button">Start New Game</button>
+            </div>
+            <div class="round">
+                <h3 id="current_round" class="current_round"></h3>    
+            </div>
+            <div id="space_left" class="space_left">
+                <h2 class="title">Player 1</h2>
+                <h1 id="points_p1">0</h1>
+            </div>
+            <div class="dice_left">
+                <img id="dice_img_left" class="dice_img" src="/images/dice-1.png">
+            </div>
+            <div class="dice_right">
+                <img id="dice_img_right" class="dice_img" src="/images/dice-1.png">
+            </div>
+            <div id="space_right" class="space_right">
+                <h2 class="title">Player 2</h2>
+                <h1 id="points_p2">0</h1>
+            </div>
+            <div id="under_space_left" class="under_space_left">
+                <h3 id="points_rolled_left" class="title"></h3>
+            </div>
+            <div id="under_space_right" class="under_space_right">
+                <h3 id="points_rolled_right" class="title"></h3>
+            </div>
+            <div class="roll_button">
+                <button id="roll_button">Roll Dice</button>
+            </div>
+            <div class="footer">
+                <h3>Roll the number of the round to win a point.</h3>
+                <h3>The one with the most points after 11 rounds wins!</h3>
+            </div>
+    </div>
+    
+    
+</body>
+</html>
